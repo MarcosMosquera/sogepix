@@ -5,6 +5,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- ANIMATION ON SCROLL -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!-- ICON -->
         <link
@@ -44,7 +47,7 @@
                 </ul>
             </nav>
 
-            <div class="hero__titles">
+            <div class="hero__titles" data-aos="fade-right">
                 <img src="images/hero-icon.png" alt="" class="titles__icon" />
 
                 <div>
@@ -134,6 +137,7 @@
                         href="https://www.instagram.com/sogepix/"
                         class="social__instagram"
                         target="_blank"
+                        data-aos="zoom-in"
                         ><img class="ig" src="svg/ig.svg" alt=""></i
                     ></a>
                 </div>
@@ -144,4 +148,10 @@
             </p>
         </footer>
     </body>
+
+    <!-- ANIMATION ON SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html>
