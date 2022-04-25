@@ -9,42 +9,57 @@
         <!-- ANIMATION ON SCROLL -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+        <!-- ICON -->
         <link
             rel="shortcut icon"
             href="../images/hero-icon.ico"
             type="image/x-icon"
         />
 
-        <link rel="stylesheet" href="../css/styles.css" />
+        <!-- CSS BOOTSTRAP -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <!-- CSS PRINCIPAL -->
+        <link rel="stylesheet" href="../css/styles.css">
 
         <title>Sogepix</title>
     </head>
 
 
-    <body>
-        <header class="header headerModifier container">
+    <body class="row">
+        <header class="header headerModifier">
 
-            <nav class="nav navPages">
-                <a href="../index.html" class="sogepix">Sogepix</a>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid navContainer">
+                    <a class="navbar-brand" href="../index.html">Sogepix</a>
 
-                <!-- Solo visible en mobile -->
-                <img src="../svg/bars.svg" alt="" class="bars barsPages">
+                    <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="../svg/bars.svg" alt="" class="bars">
+                    </button>
 
-                <ul class="nav__ul nav__ul--pages">
-                    <li class="nav__li"><a href="../index.html">Inicio</a></li>
-                    <li class="nav__li">
-                        <a href="drawings.html">Dibujos</a>
-                    </li>
-                    <li class="nav__li">
-                        <a href="contact.html">Contacto</a>
-                    </li>
-                    <li class="nav__li">
-                        <a href="inspirations.html">Inspiraciones</a>
-                    </li>
-                    <li class="nav__li">
-                        <a href="commissions.html">Comisiones</a>
-                    </li>
-                </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="drawings.html">Dibujos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="commissions.html">Comisiones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="inspirations.html">Inspiraciones</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    
+                </div>
             </nav>
 
             <div class="titleFlex">
@@ -69,7 +84,6 @@
                 <img src="../images/draw9.png" alt="" class="drawing" data-aos="fade-up">
                 <img src="../images/draw10.png" alt="" class="drawing" data-aos="fade-up">
                 <img src="../images/draw11.png" alt="" class="drawing" data-aos="fade-up">
-                <img src="../images/draw12.png" alt="" class="drawing" data-aos="fade-up">
 
             </section>
         </main>
@@ -111,11 +125,15 @@
                 Sitio web realizado por &copy; Marcos Mosquera
             </p>
         </footer>
-    </body>
 
-    <!-- ANIMATION ON SCROLL -->
+        <!-- ANIMATION ON SCROLL -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    </body>
 </html>

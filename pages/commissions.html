@@ -9,40 +9,57 @@
         <!-- ANIMATION ON SCROLL -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+        <!-- ICON -->
         <link
             rel="shortcut icon"
             href="../images/hero-icon.ico"
             type="image/x-icon"
         />
 
-        <link rel="stylesheet" href="../css/styles.css" />
+        <!-- CSS BOOTSTRAP -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <!-- CSS PRINCIPAL -->
+        <link rel="stylesheet" href="../css/styles.css">
 
         <title>Sogepix</title>
     </head>
 
 
-    <body>
-        <header class="header headerModifier container">
+    <body class="row">
+        <header class="header headerModifier">
 
-            <nav class="nav navPages">
-                <a href="../index.html" class="sogepix">Sogepix</a>
-                <!-- Solo visible en mobile -->
-                <img src="../svg/bars.svg" alt="" class="bars barsPages">
-                <ul class="nav__ul nav__ul--pages">
-                    <li class="nav__li"><a href="../index.html">Inicio</a></li>
-                    <li class="nav__li">
-                        <a href="drawings.html">Dibujos</a>
-                    </li>
-                    <li class="nav__li">
-                        <a href="contact.html">Contacto</a>
-                    </li>
-                    <li class="nav__li">
-                        <a href="inspirations.html">Inspiraciones</a>
-                    </li>
-                    <li class="nav__li">
-                        <a href="commissions.html">Comisiones</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid navContainer">
+                    <a class="navbar-brand" href="../index.html">Sogepix</a>
+
+                    <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="../svg/bars.svg" alt="" class="bars">
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="drawings.html">Dibujos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="commissions.html">Comisiones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="inspirations.html">Inspiraciones</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    
+                </div>
             </nav>
 
             <div class="titleFlex">
@@ -57,27 +74,30 @@
             <section class="cardsContainer container">
 
                 <div class="card" data-aos="fade-up">
-                     <img src="../images/card0.png" alt="" class="card__img">
-
-                    <h2 class="card__title">Solo cabeza</h2>
-                    <h3 class="card__price">$10 USD</h3>
-                    <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, ad.</p>
+                    <img src="../images/card0.png" class="card-img-top" alt="Pixelart de la cara de un personaje">
+                    <div class="card-body">
+                        <h3 class="card-title">Solo cabeza</h3>
+                        <h4 class="card-subtitle mb-2">10$ USD</h4>
+                        <a href="#" class="button">Elegir</a>
+                    </div>
                 </div>
 
                 <div class="card" data-aos="fade-up">
-                    <img src="../images/card1.jpg" alt="" class="card__img">
-
-                    <h2 class="card__title">Cuerpo completo</h2>
-                    <h3 class="card__price">$20 USD</h3>
-                    <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, ad.</p>
+                    <img src="../images/card1.jpg" class="card-img-top" alt="Pixelart de la cara de un personaje">
+                    <div class="card-body">
+                        <h3 class="card-title">Cuerpo completo</h3>
+                        <h4 class="card-subtitle mb-2">20$ USD</h4>
+                        <a href="#" class="button">Elegir</a>
+                    </div>
                 </div>
 
                 <div class="card" data-aos="fade-up">
-                     <img src="../images/card2.png" alt="" class="card__img">
-
-                    <h2 class="card__title">Escena</h2>
-                    <h3 class="card__price">$50 USD</h3>
-                    <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, ad.</p>    
+                    <img src="../images/card2.png" class="card-img-top" alt="Pixelart de la cara de un personaje">
+                    <div class="card-body">
+                        <h3 class="card-title">Escena</h3>
+                        <h4 class="card-subtitle mb-2">50$ USD</h4>
+                        <a href="#" class="button">Elegir</a>
+                    </div>
                 </div>
 
             </section>
@@ -122,11 +142,15 @@
                 Sitio web realizado por &copy; Marcos Mosquera
             </p>
         </footer>
-    </body>
 
     <!-- ANIMATION ON SCROLL -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    </body>
 </html>
