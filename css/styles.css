@@ -75,7 +75,7 @@ body {
 }
 
 .navbar-collapse {
-	transition: all 0.1s;
+	transition: all 0.3s;
 }
 
 .navbar-brand {
@@ -124,6 +124,8 @@ body {
 	align-items: center;
 	flex-direction: row;
 	font-size: 1rem;
+	position: relative;
+	z-index: -1;
 }
 
 .titles__icon {
@@ -439,11 +441,12 @@ body {
 	text-align: center;
 	padding-top: 10px;
 	text-shadow: 1.5px 1.5px 0 rgba(33, 0, 99, 0.425);
+	margin: 0;
 }
 
 /* ---------------------------------------------------------------------------- MEDIA QUERIES */
 
-/* THIS IS FOR CONTACT ONLY */
+/* --------------------------------------- 1350px CONTACT ONLY */
 @media (max-width: 1350px) {
 	.formContainer {
 		flex-direction: column;
@@ -454,11 +457,8 @@ body {
 		margin-top: 70px;
 	}
 }
-
+/* --------------------------------------- 1200px */
 @media (max-width: 1200px) {
-	.container {
-		margin: 0 100px;
-	}
 	.presentation__article {
 		gap: 120px 100px;
 	}
@@ -484,6 +484,7 @@ body {
 	}
 }
 
+/* --------------------------------------- 950px INDEX ONLY */
 @media (max-width: 950px) {
 	.presentation__article {
 		grid-template-rows: 1fr min-content 1fr min-content;
@@ -496,11 +497,9 @@ body {
 	}
 }
 
+/* --------------------------------------- 768px */
 @media (max-width: 768px) {
 	/* INDEX */
-	.container {
-		margin: 0 80px;
-	}
 	.nav__ul {
 		justify-content: center;
 	}
@@ -565,9 +564,13 @@ body {
 	}
 }
 
+/* --------------------------------------- 480px */
 @media (max-width: 480px) {
-	.container {
-		margin: 0;
+	.header {
+		height: 90vh;
+	}
+	.headerModifier {
+		height: 40vh;
 	}
 	.nav__ul {
 		display: none;
@@ -578,7 +581,8 @@ body {
 		justify-content: flex-end;
 	}
 	.hero__titles {
-		font-size: 1rem;
+		margin-top: 30px;
+		font-size: 0.8rem;
 		align-content: start;
 	}
 	.titles__icon {
@@ -599,16 +603,17 @@ body {
 	.presentation__paragraph {
 		padding: 0 30px;
 	}
-	.footer__nav {
-		padding: 0 60px;
-	}
 	.footer__ul {
 		flex-direction: column;
 		margin: 20px 0;
 		font-size: 1.2rem;
+		padding: 0;
+		text-align: center;
 	}
 	.footer__li {
-		padding-left: 0;
+		text-align: center;
+		padding: 0;
+		margin: 20px 0;
 	}
 
 	/* GENERAL FOR OTHER PAGES */
@@ -621,14 +626,9 @@ body {
 		font-size: 3rem;
 	}
 
-	/* DRAWINGS */
-	.drawsContainer {
-		margin: 0 4px;
-	}
-
 	/* CONTACT */
 	.formContainer {
-		padding: 80px 40px;
+		padding: 80px 20px;
 	}
 	.form {
 		width: 100%;
@@ -648,18 +648,19 @@ body {
 		text-align: center;
 		margin: 30px 0;
 	}
-}
-
-@media (max-width: 320px) {
-	.hero__titles {
-		font-size: 0.8rem;
-	}
 	.footer__nav {
 		flex-direction: column;
 	}
 	.ig {
 		margin: 0;
 		margin-bottom: 2em;
+	}
+}
+
+/* --------------------------------------- 320px */
+@media (max-width: 320px) {
+	.hero__titles {
+		font-size: 0.8rem;
 	}
 
 	/* CONTACT */
