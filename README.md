@@ -2,9 +2,9 @@
 
 Página de artista Pixel Art.
 
-## Solucionado en esta versión
+## Cambios de esta versión
 
--   Scroll horizontal causado por una clase `row` en el body.
--   Inputs no funcionales en los carousels en la página de inspiraciones, ahora cada uno tiene su propia id.
--   Títulos del index demasiado grandes en vista mobile.
--   Al abrir el menú desplegable en el index en vista mobile, los títulos podian hacer overflow con el main, ahora se esconde por debajo.
+-   Nuevo CSS creado con SCSS, actualmente sólo lo utiliza el index.
+-   Solucionado scroll horizontal en las demás páginas.
+-   Solucionado botón no funcional en el index por un mal uso de z-index.
+-   Solucionado el tamaño de content del botón de Instagram (el svg era más grande que el content).
