@@ -1,0 +1,112 @@
+.header {
+	height: 100vh;
+	padding: 0;
+}
+
+.navbar-collapse {
+	transition: all 0.3s;
+}
+
+.navbar-brand {
+	font-family: alagard;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	color: $primaryColor;
+	text-shadow: 2px 2px 0 rgba(25, 8, 59, 0.425);
+
+    &:hover {
+        color: #ff4775;
+    }
+}
+
+.nav-item {
+	margin: 0 15px 0px 15px;
+	transition: border-bottom 0.1s;
+
+    &:hover {
+        margin-bottom: calc(-2px);
+        border-bottom: 2px solid $primaryColor;
+    }
+}
+
+.nav-link {
+	transition: color 0.1s;
+	color: #fff;
+
+    &:hover {
+        color: $primaryColor;
+    }
+
+    &:focus {
+        color: #fff;
+    }
+}
+
+.bars {
+	width: 2em;
+}
+
+.hero__titles {
+	width: 100%;
+	height: 90%;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	font-size: 1rem;
+	position: relative;
+	z-index: 10;
+}
+
+.titles__icon {
+	width: 16em;
+	height: 16em;
+	margin-right: 25px;
+}
+
+.titles__title {
+	font-size: 6em;
+	text-shadow: 6px 6px 0 rgba(25, 13, 48, 0.603);
+}
+
+.titles__subtitle {
+	font-size: 2.5em;
+	text-shadow: 3px 3px 0 rgba(25, 13, 48, 0.603);
+	margin-bottom: 15px;
+}
+
+.hero__draw {
+	width: 500px;
+	height: 500px;
+	position: relative;
+	z-index: -1;
+}
+
+
+/* --------------------------- HERO FROM THE OTHER PAGES */
+
+.headerModifier {
+	height: 40vh;
+}
+
+.sogepix {
+	color: $primaryColor;
+	text-shadow: 4px 4px 0 rgba(25, 13, 48, 0.603);
+	padding-top: 15px;
+	font-family: alagard;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+}
+
+.titleFlex {
+	display: flex;
+	width: 100%;
+	height: 80%;
+	align-items: center;
+	justify-content: center;
+}
+
+.titleModifier {
+	font-size: 4rem;
+	text-shadow: 5px 5px 0 rgba(25, 13, 48, 0.603);
+	z-index: -1;
+}

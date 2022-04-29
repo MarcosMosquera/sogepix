@@ -64,6 +64,7 @@ p {
 /* ---------------------------------------------------------------------------- HERO */
 .header {
 	height: 100vh;
+	padding: 0;
 }
 
 body {
@@ -183,6 +184,7 @@ body {
 
 /* ---------------------------------------------------------------------------- MAIN */
 .main {
+	padding: 0;
 	border-top: 10px solid #8c7cb6;
 	background-color: #5b4d83;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%23826ba8' fill-opacity='0.15'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
@@ -387,10 +389,8 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;
-}
-
-.footerCommissions {
-	background: none;
+	margin: 0;
+	padding: 0;
 }
 
 .shadowModifier {
@@ -408,6 +408,7 @@ body {
 	padding: 70px 0;
 	justify-content: space-between;
 	align-items: center;
+	margin: 0;
 }
 
 .footer__ul {
@@ -442,6 +443,10 @@ body {
 	padding-top: 10px;
 	text-shadow: 1.5px 1.5px 0 rgba(33, 0, 99, 0.425);
 	margin: 0;
+}
+
+.footerCommissions {
+	background: none;
 }
 
 /* ---------------------------------------------------------------------------- MEDIA QUERIES */

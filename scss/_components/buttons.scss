@@ -1,0 +1,23 @@
+.button {
+	color: #fff;
+	background: $primaryColor;
+	padding: $buttonPadding;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border: none;
+	box-shadow: 0 10px $buttonBorderColor;
+
+    &:hover {
+        color: #fff;
+        box-shadow: 0 5px $buttonBorderColor;
+        transform: translate(0, 5px);
+    }
+
+    &:active {
+        box-shadow: 0 0 $buttonBorderColor;
+        transform: translate(0, 10px);
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "sogepix",
+  "version": "1.0.0",
+  "description": "Página de artista Pixel Art.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/scstyles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosMosquera/sogepix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcosMosquera/sogepix/issues"
+  },
+  "homepage": "https://github.com/MarcosMosquera/sogepix#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

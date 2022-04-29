@@ -1,0 +1,29 @@
+body {
+	background-image: url(../images/background.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+	color: #ffffff;
+	font-family: alagard;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+p {
+	color: $textColor;
+}
