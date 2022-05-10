@@ -1,0 +1,30 @@
+/* INSPIRATIONS MAIN */
+
+.inspirations {
+	padding: 80px 0;
+}
+
+.inspiration {
+	margin-bottom: 100px;
+}
+
+.inspiration__title {
+	font-size: 3rem;
+	text-shadow: 3px 3px 0 rgba(28, 0, 83, 0.623);
+	margin-bottom: 10px;
+}
+
+.carousel {
+	box-shadow: 14px 14px 0 rgba(39, 12, 94, 0.425);
+}
+
+.carousel-item {
+	height: 400px;
+	transition: all 0.5s;
+    
+    img {
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+}

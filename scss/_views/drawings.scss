@@ -1,0 +1,15 @@
+/* DRAWINGS MAIN */
+
+.drawsContainer {
+	padding: 80px 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	justify-content: center;
+}
+
+.drawing {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

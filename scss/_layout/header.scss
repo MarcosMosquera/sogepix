@@ -1,6 +1,28 @@
+@keyframes fadeLeft {
+	from {
+		opacity: 0;
+		transform: translateX(200px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 .header {
 	height: 100vh;
 	padding: 0;
+	position: relative;
+
+	&::after {
+		content: url(../images/hero-draw.png);
+		position: absolute;
+		bottom: -5px;
+		right: 0px;
+		animation-name: fadeLeft;
+		animation-fill-mode: backwards;
+		animation-duration: 0.5s;
+	}
 }
 
 .navbar-collapse {
@@ -14,32 +36,32 @@
 	color: $primaryColor;
 	text-shadow: 2px 2px 0 rgba(25, 8, 59, 0.425);
 
-    &:hover {
-        color: #ff4775;
-    }
+	&:hover {
+		color: #ff4775;
+	}
 }
 
 .nav-item {
 	margin: 0 15px 0px 15px;
 	transition: border-bottom 0.1s;
 
-    &:hover {
-        margin-bottom: calc(-2px);
-        border-bottom: 2px solid $primaryColor;
-    }
+	&:hover {
+		margin-bottom: calc(-2px);
+		border-bottom: 2px solid $primaryColor;
+	}
 }
 
 .nav-link {
 	transition: color 0.1s;
 	color: #fff;
 
-    &:hover {
-        color: $primaryColor;
-    }
+	&:hover {
+		color: $primaryColor;
+	}
 
-    &:focus {
-        color: #fff;
-    }
+	&:focus {
+		color: #fff;
+	}
 }
 
 .bars {
@@ -47,8 +69,7 @@
 }
 
 .hero__titles {
-	width: 100%;
-	height: 90%;
+	@include size(100%, 90%);
 	display: flex;
 	align-items: center;
 	flex-direction: row;
@@ -58,8 +79,7 @@
 }
 
 .titles__icon {
-	width: 16em;
-	height: 16em;
+	@include size(16em, 16em);
 	margin-right: 25px;
 }
 
@@ -75,12 +95,10 @@
 }
 
 .hero__draw {
-	width: 500px;
-	height: 500px;
+	@include size(500px, 500px);
 	position: relative;
 	z-index: -1;
 }
-
 
 /* --------------------------- HERO FROM THE OTHER PAGES */
 
@@ -98,9 +116,8 @@
 }
 
 .titleFlex {
+	@include size(100%, 80%);
 	display: flex;
-	width: 100%;
-	height: 80%;
 	align-items: center;
 	justify-content: center;
 }

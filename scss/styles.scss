@@ -1,13 +1,26 @@
+// RESET
 @import '_base/reset';
 
+// VARIABLES Y MIXINS
 @import '_utilities/variables';
+@import '_utilities/mixins';
 
+// GENERAL
 @import '_base/typo';
 @import '_base/general';
 
+// BUTTON
 @import '_components/buttons';
 
+// HEADER
 @import '_layout/header';
-@import '_layout/footer';
 
+// PAGES
 @import '_views/home';
+@import '_views/drawings';
+@import '_views/contact';
+@import '_views/commissions';
+@import '_views/inspirations';
+
+// FOOTER
+@import '_layout/footer';

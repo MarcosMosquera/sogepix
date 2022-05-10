@@ -1,4 +1,25 @@
 /* ---------------------------------------------------------------------------- HOME MAIN */
+// PRUEBA MAPS
+$pruebaMaps: (
+	rojo: #ff0000,
+	verde: #00ff00,
+	azul: #0000ff,
+);
+
+@each $nombreColor, $color in $pruebaMaps {
+	.caja--#{$nombreColor} {
+		display: inline-block;
+		@include size(50px, 50px);
+		background-color: $color;
+	}
+}
+
+// PRUEBA EXTEND
+.box {
+	@extend .caja--verde;
+	border: 2px solid #ff00ff;
+}
+
 .main {
 	padding: 0;
 	border-top: 10px solid #8c7cb6;
@@ -28,7 +49,7 @@
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
 	gap: 200px 150px;
-    
+
 	align-items: center;
 	margin-bottom: 80px;
 }
