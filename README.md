@@ -6,7 +6,7 @@
 -   Description y keywords agregados dentro del head en todos los HTML.
 -   Ahora cada página tiene un title diferente (línea 29 en todas).
 -   Alts agregados a las imágenes:
-    -   Index líneas 41, 71 y 163.
+    -   Index líneas 41, 71 y 166 (las imágenes de las líneas 97 y 116 ya tenían un alt).
     -   Contact líneas 41, 79 y 119.
     -   Drawings líneas 41, de 79 a 90, y 123.
     -   Inspirations líneas 41, de 90 a 102, de 132 a 144, de 172 a 184, de 212 a 224, y 274.
@@ -15,6 +15,6 @@
 ## Otros cambios
 
 -   Ahora todas las páginas fueron adaptadas a SCSS.
--   Agregado un archivo .scss de mixins. (Usado por ejemplo en header.scss, línea 71.)
+-   Agregado un archivo .scss de mixins. (Usado por ejemplo en header.scss, línea 71).
 -   Prueba temporal de maps en home.scss, primera línea.
--   Prueba temporal de extend en home.css, línea 19.
+-   Prueba temporal de extend en home.scss, línea 19.
