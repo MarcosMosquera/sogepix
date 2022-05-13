@@ -6,6 +6,8 @@
 
 .inspiration {
 	margin-bottom: 100px;
+	font-size: 1.6rem;
+	line-height: 1;
 }
 
 .inspiration__title {
@@ -21,10 +23,10 @@
 .carousel-item {
 	height: 400px;
 	transition: all 0.5s;
-    
-    img {
-        height: 100%;
-        object-fit: cover;
-        object-position: bottom;
-    }
+
+	img {
+		height: 100%;
+		object-fit: cover;
+		object-position: bottom;
+	}
 }

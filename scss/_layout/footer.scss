@@ -10,7 +10,8 @@
 }
 
 .footer {
-	background-image: url(../images/background.png);
+	font-size: 1.8rem;
+	background-image: url(../images/background.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -31,29 +32,29 @@
 }
 
 .footer__li {
-	padding: 10px 20px;
+	padding: 10px 30px;
 
-    a {
-        transition: color 0.2s;
-        
-        &:hover {
-            color: $primaryColor;
-        }
-    }
+	a {
+		transition: color 0.2s;
+
+		&:hover {
+			color: $primaryColor;
+		}
+	}
 }
 
 .social__instagram {
-    display: inline-block;
-    width: 80px;
+	display: inline-block;
+	width: 80px;
 }
 
 .ig {
 	width: 80px;
 	transition: filter 0.2s;
-    
-    &:hover {
-        filter: brightness(1.2);
-    }
+
+	&:hover {
+		filter: brightness(1.2);
+	}
 }
 
 .footer__copyright {

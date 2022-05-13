@@ -1,4 +1,6 @@
 .button {
+	font-size: 1.8rem;
+	text-transform: uppercase;
 	color: #fff;
 	background: $primaryColor;
 	padding: $buttonPadding;
@@ -10,14 +12,14 @@
 	border: none;
 	box-shadow: 0 10px $buttonBorderColor;
 
-    &:hover {
-        color: #fff;
-        box-shadow: 0 5px $buttonBorderColor;
-        transform: translate(0, 5px);
-    }
+	&:hover {
+		color: #fff;
+		box-shadow: 0 5px $buttonBorderColor;
+		transform: translate(0, 5px);
+	}
 
-    &:active {
-        box-shadow: 0 0 $buttonBorderColor;
-        transform: translate(0, 10px);
-    }
+	&:active {
+		box-shadow: 0 0 $buttonBorderColor;
+		transform: translate(0, 10px);
+	}
 }

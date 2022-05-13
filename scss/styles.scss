@@ -1,26 +1,29 @@
 // RESET
-@import '_base/reset';
+@import "_base/reset";
 
 // VARIABLES Y MIXINS
-@import '_utilities/variables';
-@import '_utilities/mixins';
+@import "_utilities/variables";
+@import "_utilities/mixins";
 
 // GENERAL
-@import '_base/typo';
-@import '_base/general';
+@import "_base/typo";
+@import "_base/general";
 
 // BUTTON
-@import '_components/buttons';
+@import "_components/buttons";
 
 // HEADER
-@import '_layout/header';
+@import "_layout/header";
 
 // PAGES
-@import '_views/home';
-@import '_views/drawings';
-@import '_views/contact';
-@import '_views/commissions';
-@import '_views/inspirations';
+@import "_views/home";
+@import "_views/drawings";
+@import "_views/contact";
+@import "_views/commissions";
+@import "_views/inspirations";
 
 // FOOTER
-@import '_layout/footer';
+@import "_layout/footer";
+
+// MEDIA QUERIES
+@import "_base/mediaqueries.scss";
