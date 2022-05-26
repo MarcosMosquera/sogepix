@@ -90,6 +90,16 @@ p {
     animation-fill-mode: backwards;
     animation-duration: 0.5s;
     z-index: -1; }
+  .header::before {
+    content: "";
+    background-image: url(../images/arrow.gif);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 26px); }
 
 .navbar {
   padding: 0; }
@@ -164,7 +174,7 @@ p {
    =========================================================================================================== */
 .headerModifier {
   height: 40vh; }
-  .headerModifier::after {
+  .headerModifier::after, .headerModifier::before {
     display: none; }
 
 .sogepix {
